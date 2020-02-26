@@ -1,3 +1,0 @@
-from simpletransformers.question_answering import QuestionAnsweringModel
-import json
-import os
