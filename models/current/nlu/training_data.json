@@ -1,0 +1,633 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "goodbye",
+        "text": "Bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Bye bot"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Goodbye friend"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi bot"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey bot"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you so much"
+      },
+      {
+        "intent": "affirm",
+        "text": "y"
+      },
+      {
+        "intent": "affirm",
+        "text": "Y"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes sure"
+      },
+      {
+        "intent": "affirm",
+        "text": "absolutely"
+      },
+      {
+        "intent": "deny",
+        "text": "no"
+      },
+      {
+        "intent": "deny",
+        "text": "never"
+      },
+      {
+        "intent": "deny",
+        "text": "I don't think so"
+      },
+      {
+        "intent": "site",
+        "text": "Can you tell me where the pain is?"
+      },
+      {
+        "intent": "site",
+        "text": "Where is the pain?"
+      },
+      {
+        "intent": "site",
+        "text": "Where are you experiancing pain?"
+      },
+      {
+        "intent": "site",
+        "text": "Tell me where it's paining"
+      },
+      {
+        "intent": "site",
+        "text": "Which part of the stomach hurts?"
+      },
+      {
+        "intent": "site",
+        "text": "Where exactly is the pain?"
+      },
+      {
+        "intent": "site",
+        "text": "Can you point out your pain?"
+      },
+      {
+        "intent": "site",
+        "text": "Can you locate your pain for me?"
+      },
+      {
+        "intent": "site",
+        "text": "Where are you experiancing pain?"
+      },
+      {
+        "intent": "site",
+        "text": "Where is your pain located?"
+      },
+      {
+        "intent": "site",
+        "text": "Where do you have pain?"
+      },
+      {
+        "intent": "site",
+        "text": "Are you experiancing pain anywhere else?"
+      },
+      {
+        "intent": "site",
+        "text": "Pain!, Where?"
+      },
+      {
+        "intent": "site",
+        "text": "Please, locate the pain for me."
+      },
+      {
+        "intent": "site",
+        "text": "Where is the pain exactly?"
+      },
+      {
+        "intent": "exacerbating_factors",
+        "text": "Does the pain reduce by doing anything?"
+      },
+      {
+        "intent": "exacerbating_factors",
+        "text": "Have you tried anything to make it better?"
+      },
+      {
+        "intent": "exacerbating_factors",
+        "text": "What makes the pain worse?"
+      },
+      {
+        "intent": "exacerbating_factors",
+        "text": "Does your pain increases suddenly?"
+      },
+      {
+        "intent": "exacerbating_factors",
+        "text": "Any perticular activity that amplifies the pain?"
+      },
+      {
+        "intent": "exacerbating_factors",
+        "text": "Any perticular activity that worsens the pain?"
+      },
+      {
+        "intent": "exacerbating_factors",
+        "text": "What causes the pain to increase?"
+      },
+      {
+        "intent": "exacerbating_factors",
+        "text": "What causes the fever to amplify?"
+      },
+      {
+        "intent": "exacerbating_factors",
+        "text": "What increases the pain?"
+      },
+      {
+        "intent": "associated_factors",
+        "text": "have you noticed any other symptoms?"
+      },
+      {
+        "intent": "associated_factors",
+        "text": "When the pain starts, do you notice any symptoms with it?"
+      },
+      {
+        "intent": "associated_factors",
+        "text": "You feel sick?"
+      },
+      {
+        "intent": "associated_factors",
+        "text": "What symptoms did you notice?"
+      },
+      {
+        "intent": "associated_factors",
+        "text": "Did you notice any symptoms?"
+      },
+      {
+        "intent": "associated_factors",
+        "text": "Any perticular symptom that you noticed?"
+      },
+      {
+        "intent": "associated_factors",
+        "text": "What are your symptoms?"
+      },
+      {
+        "intent": "associated_factors",
+        "text": "Any symptoms?"
+      },
+      {
+        "intent": "associated_factors",
+        "text": "What symptoms did you notice?"
+      },
+      {
+        "intent": "associated_factors",
+        "text": "Did you observe any symptoms?"
+      },
+      {
+        "intent": "character",
+        "text": "Is the pain sharp or dull?"
+      },
+      {
+        "intent": "character",
+        "text": "What does it feel like?"
+      },
+      {
+        "intent": "character",
+        "text": "What is the nature of the pain?"
+      },
+      {
+        "intent": "character",
+        "text": "What kind of pain is it?"
+      },
+      {
+        "intent": "character",
+        "text": "What kind of pain it is?"
+      },
+      {
+        "intent": "character",
+        "text": "Is the fever very high?"
+      },
+      {
+        "intent": "character",
+        "text": "Is the fever low?"
+      },
+      {
+        "intent": "character",
+        "text": "Is the migraine bearable?"
+      },
+      {
+        "intent": "character",
+        "text": "Is the migraine unbearable?"
+      },
+      {
+        "intent": "character",
+        "text": "Is the stomach pain really bad?"
+      },
+      {
+        "intent": "character",
+        "text": "Is the stomach pain bearable?"
+      },
+      {
+        "intent": "problem_start",
+        "text": "How long ago did you notice the symptoms?"
+      },
+      {
+        "intent": "problem_start",
+        "text": "How long have you had the pain?"
+      },
+      {
+        "intent": "problem_start",
+        "text": "How many days have you had this problem?"
+      },
+      {
+        "intent": "problem_start",
+        "text": "Since when are you unable to walk?"
+      },
+      {
+        "intent": "problem_start",
+        "text": "Do you have trouble breating all the time?"
+      },
+      {
+        "intent": "problem_start",
+        "text": "When did breathing problem started?"
+      },
+      {
+        "intent": "problem_start",
+        "text": "Since when did your migrains start?"
+      },
+      {
+        "intent": "problem_start",
+        "text": "When did this issue started?"
+      },
+      {
+        "intent": "problem_start",
+        "text": "From when are you having this problem?"
+      },
+      {
+        "intent": "problem_start",
+        "text": "Since when it all begin?"
+      },
+      {
+        "intent": "problem_start",
+        "text": "How many days have passed since you are experiancing this issue?"
+      },
+      {
+        "intent": "problem_start",
+        "text": "When did this problem begin?"
+      },
+      {
+        "intent": "what_problem",
+        "text": "Okay so tell me more about this pain"
+      },
+      {
+        "intent": "what_problem",
+        "text": "What kind of pain do you have?"
+      },
+      {
+        "intent": "what_problem",
+        "text": "please describe your pain?"
+      },
+      {
+        "intent": "what_problem",
+        "text": "What type of pain do you have?"
+      },
+      {
+        "intent": "what_problem",
+        "text": "Can you describe the pain for me?"
+      },
+      {
+        "intent": "what_problem",
+        "text": "Can you please describe the pain?"
+      },
+      {
+        "intent": "what_problem",
+        "text": "Please, tell something about the pain."
+      },
+      {
+        "intent": "what_problem",
+        "text": "Tell me more about your problem"
+      },
+      {
+        "intent": "what_problem",
+        "text": "Tell me more about your headache"
+      },
+      {
+        "intent": "what_problem",
+        "text": "Tell me more about your breating problem."
+      },
+      {
+        "intent": "what_problem",
+        "text": "What can i do for you today?"
+      },
+      {
+        "intent": "what_problem",
+        "text": "What is your problem today?"
+      },
+      {
+        "intent": "radiation",
+        "text": "I see. Does the pain travel from there at all?"
+      },
+      {
+        "intent": "radiation",
+        "text": "pain radiates to any other side?"
+      },
+      {
+        "intent": "radiation",
+        "text": "Does the pain radiates to any of the other sites?"
+      },
+      {
+        "intent": "radiation",
+        "text": "Is there any pain along with fever?"
+      },
+      {
+        "intent": "radiation",
+        "text": "Does tha pain move from one side to another?"
+      },
+      {
+        "intent": "radiation",
+        "text": "Does the pains location keeps on changing?"
+      },
+      {
+        "intent": "radiation",
+        "text": "Is the pain only at one location?"
+      },
+      {
+        "intent": "radiation",
+        "text": "Does the location of the pain change?"
+      },
+      {
+        "intent": "radiation",
+        "text": "Does it starts to pain anywhere else?"
+      },
+      {
+        "intent": "radiation",
+        "text": "Is the pains location same?"
+      },
+      {
+        "intent": "radiation",
+        "text": "Does the pains location change?"
+      },
+      {
+        "intent": "severity",
+        "text": "How bad would you say the pain is?"
+      },
+      {
+        "intent": "severity",
+        "text": "How severe is the pain?"
+      },
+      {
+        "intent": "severity",
+        "text": "Rate the pain?"
+      },
+      {
+        "intent": "severity",
+        "text": "Rate the pain from one to ten."
+      },
+      {
+        "intent": "severity",
+        "text": "How bad is the pain?"
+      },
+      {
+        "intent": "severity",
+        "text": "How bad is the fever?"
+      },
+      {
+        "intent": "severity",
+        "text": "How much is the pain?"
+      },
+      {
+        "intent": "severity",
+        "text": "Do you have very severe pain?"
+      },
+      {
+        "intent": "severity",
+        "text": "Is the pain very severe?"
+      },
+      {
+        "intent": "severity",
+        "text": "Is the pain bearable?"
+      },
+      {
+        "intent": "severity",
+        "text": "Can you bear the pain?"
+      },
+      {
+        "intent": "severity",
+        "text": "How much fever you have?"
+      },
+      {
+        "intent": "severity",
+        "text": "how bad is your fever?"
+      },
+      {
+        "intent": "severity",
+        "text": "How bad is your headache?"
+      },
+      {
+        "intent": "severity",
+        "text": "Is the pain really that bad?"
+      },
+      {
+        "intent": "severity",
+        "text": "Is the headache really that bad?"
+      },
+      {
+        "intent": "severity",
+        "text": "Are you too much in pain?"
+      },
+      {
+        "intent": "severity",
+        "text": "How much more can you bear?"
+      },
+      {
+        "intent": "movements",
+        "text": "Do you stay active?"
+      },
+      {
+        "intent": "movements",
+        "text": "Do you work out?"
+      },
+      {
+        "intent": "movements",
+        "text": "Do you lift heavy weights?"
+      },
+      {
+        "intent": "movements",
+        "text": "Do you sit for long hours?"
+      },
+      {
+        "intent": "movements",
+        "text": "Did you injure yourself in your knee?"
+      },
+      {
+        "intent": "movements",
+        "text": "Do you take a lot of stress?"
+      },
+      {
+        "intent": "movements",
+        "text": "Are you taking stress?"
+      },
+      {
+        "intent": "movements",
+        "text": "Do you stress out alot?"
+      },
+      {
+        "intent": "movements",
+        "text": "Did you get hurt in the knee?"
+      },
+      {
+        "intent": "movements",
+        "text": "You overthink alot?"
+      },
+      {
+        "intent": "movements",
+        "text": "How is the pain when you move your hand?"
+      },
+      {
+        "intent": "movements",
+        "text": "How often do you work out?"
+      },
+      {
+        "intent": "problem_before",
+        "text": "Have you experienced this pain before?"
+      },
+      {
+        "intent": "problem_before",
+        "text": "Have you experienced this problem before?"
+      },
+      {
+        "intent": "problem_before",
+        "text": "Have you had a similar pain in the past?"
+      },
+      {
+        "intent": "problem_before",
+        "text": "Have you had a similar problem in the past?"
+      },
+      {
+        "intent": "problem_before",
+        "text": "Did you have similar problem in the past?"
+      },
+      {
+        "intent": "problem_before",
+        "text": "Have you had this pain before?"
+      },
+      {
+        "intent": "problem_before",
+        "text": "Did you experience similar pain earlier?"
+      },
+      {
+        "intent": "problem_before",
+        "text": "Did you experience similar problem before?"
+      },
+      {
+        "intent": "name",
+        "text": "Can i ask your name?"
+      },
+      {
+        "intent": "name",
+        "text": "Could you tell me your name?"
+      },
+      {
+        "intent": "name",
+        "text": "What are you called?"
+      },
+      {
+        "intent": "name",
+        "text": "What is your name?"
+      },
+      {
+        "intent": "name",
+        "text": "What are you known as?"
+      },
+      {
+        "intent": "name",
+        "text": "How can i recognize you?"
+      },
+      {
+        "intent": "medications",
+        "text": "Are you taking any medications?"
+      },
+      {
+        "intent": "medications",
+        "text": "Are you on any medications?"
+      },
+      {
+        "intent": "medications",
+        "text": "Are you taking any medicines currently?"
+      },
+      {
+        "intent": "medications",
+        "text": "Do you have any previous medications?"
+      },
+      {
+        "intent": "medications",
+        "text": "Do you have any other prescriptions?"
+      },
+      {
+        "intent": "medications",
+        "text": "Are you presently on any medications?"
+      },
+      {
+        "intent": "medications",
+        "text": "Are you taking any medicines presently"
+      },
+      {
+        "intent": "faq/more_about_migraine",
+        "text": "Can you tell me more about it?"
+      },
+      {
+        "intent": "faq/more_about_migraine",
+        "text": "Can you describe it in more detail?"
+      },
+      {
+        "intent": "faq/more_about_migraine",
+        "text": "Can you give more details?"
+      },
+      {
+        "intent": "faq/more_about_migraine",
+        "text": "Anything else that you can tell me?"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}

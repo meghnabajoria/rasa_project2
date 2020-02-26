@@ -1,0 +1,155 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_goodbye
+- utter_what_problem
+- utter_default
+- utter_problem_start
+- utter_gratitude
+- utter_ask_again
+- utter_radiation
+- utter_severity
+- utter_movements
+- utter_site
+- utter_medications
+- utter_name
+- utter_problem_before
+- utter_character
+- utter_associated_factors
+- utter_exacerbating_factors
+config:
+  store_entities_as_slots: true
+entities:
+- PROBLEM
+forms: []
+intents:
+- goodbye:
+    use_entities: true
+- greet:
+    use_entities: true
+- thanks:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- site:
+    use_entities: true
+- exacerbating_factors:
+    use_entities: true
+- associated_factors:
+    use_entities: true
+- character:
+    use_entities: true
+- problem_start:
+    use_entities: true
+- what_problem:
+    use_entities: true
+- radiation:
+    use_entities: true
+- severity:
+    use_entities: true
+- movements:
+    use_entities: true
+- problem_before:
+    use_entities: true
+- name:
+    use_entities: true
+- medications:
+    use_entities: true
+slots:
+  PROBLEM:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_again:
+  - text: text:"Okay! Let's start again, please tell me what do you need?"
+  - text: text:"No issues! Let's try this again.\n Please repeat your query?"
+  utter_associated_factors:
+  - text: text:"No doctot that's all"
+  - text: text:"Yes! I feel nauseous"
+  - text: text:"yes doctor"
+  - text: text:"Yeah ! slight dizziness"
+  - text: text:"sometimes i notice headache"
+  utter_character:
+  - text: text:"It's usually a sharp pain"
+  - text: text:"It's a dull pain"
+  - text: text:"I will say it's moderate"
+  - text: text:"Initially its low but gradually it increases"
+  - text: text:"Yes, the fever is genrally low"
+  - text: text:"It's usually low"
+  - text: text:"No! My migrains are pretty bad"
+  - text: text:"Yeah the migrains are usually bearable"
+  utter_default:
+  - text: text:"I am sorry, I didn't get that. Could you please repeat your query?"
+  - text: text:"I am not sure what you are aiming for."
+  utter_exacerbating_factors:
+  - text: text:"No! its not reducing by any means"
+  - text: text:"No ! the pain is not reducing"
+  - text: text:"Yes! if i massage the spot continuesly"
+  - text: text:"I have no idea"
+  - text: text:"Walking increases the pain"
+  - text: text:"working out sometimes increases the pain"
+  - text: text:"eating spicy food increases the pain"
+  utter_goodbye:
+  - text: text:"Bye"
+  utter_gratitude:
+  - text: text:"Glad that I could be of help to you!\nBye"
+  utter_greet:
+  - text: text:"Hello doctor"
+  - text: text:"Hi doctor"
+  - text: text:"Good morning doctor"
+  - text: text:"Good evening doctor"
+  utter_medications:
+  - text: text:"I am currently taking medicines prescribed by other doctor"
+  - text: text:"No!"
+  - text: text:"I was taking few medicines but then I discontinued them"
+  - text: text:"I am having a pain killer"
+  utter_movements:
+  - text: text:"yes doctor I am very active"
+  - text: text:"yes doctor, I work out daily"
+  - text: text:"I don't workout but I am active"
+  - text: text:"Yes doctor, I tend to overthink sometimes"
+  - text: text:"No doctor, I take my mental health very seriosuly"
+  utter_name:
+  - text: text:"My name is Ema"
+  - text: text:"You can call me John"
+  - text: text:"I am Ashley"
+  utter_problem_before:
+  - text: text:"No! It's the first time"
+  - text: text:"Yes, frequently"
+  - text: text:"Yes but rarely"
+  - text: text:"Not very often, usually once a month"
+  utter_problem_start:
+  - text: text:"Just a few days back,may be a week"
+  - text: text:"Almost one month back"
+  - text: text:"since a year"
+  - text: text:"It's there ever since I started noticing it."
+  utter_radiation:
+  - text: text:"very seldom"
+  - text: text:"only when the headache increases"
+  - text: text:"No, it usually sticks to my lower abdomen only"
+  - text: text:"No, just the knees"
+  - text: text:"No pain, just fever"
+  utter_severity:
+  - text: text:"Like five out of ten"
+  - text: text:"unbearable pain at times"
+  - text: text:"very high fever"
+  - text: text:"The fever is low"
+  - text: text:"I am hardly able to walk for five minutes"
+  - text: text:"My migrains worsen by afternoon"
+  utter_site:
+  - text: text:"It's in my knees"
+  - text: text:"It's in my right knee"
+  - text: text:"It's in my left knee"
+  - text: text:"In my abdomen"
+  - text: text:"In the left side of my forehead"
+  - text: text:"The pain is in my stomach"
+  - text: text:"I have stomach pain"
+  utter_what_problem:
+  - text: text:"I have pain in lower abdomen"
+  - text: text:"My knees hurt. I am unable to walk."
+  - text: text:"I have migraine"
+  - text: text:"I have trouble breating"
