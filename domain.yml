@@ -46,12 +46,12 @@ intents:
 - medications
 - faq
 
-templates:
+responses:
   utter_greet:
-  - text:"Hello doctor"
-  - text:"Hi doctor"
-  - text:"Good morning doctor"
-  - text:"Good evening doctor"
+  - text: "Hello doctor"
+  - text: "Hi doctor"
+  - text: "Good morning doctor"
+  - text: "Good evening doctor"
   utter_site:
   - text:"It's in my knees"
   - text:"It's in my right knee"
