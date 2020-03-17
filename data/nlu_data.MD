@@ -8,8 +8,6 @@
 ## intent:greet
 - Hi
 - Hey
-- Hi bot
-- Hey bot
 - Hello
 
 ## intent:thanks
@@ -75,28 +73,28 @@
 - What is the nature of the pain?
 - What kind of pain is it?
 - What kind of pain it is?
-- Is the fever very high?
-- Is the fever low?
-- Is the migraine bearable?
-- Is the migraine unbearable?
-- Is the stomach pain really bad?
-- Is the stomach pain bearable?
+- Is the pain very high?
+- Is the pain low?
+- Is the pain bearable?
+- Is the pain unbearable?
+- Is the pain really bad?
+- Is the pain some how bearable?
 
 ##intent:problem_start
 - How long ago did you notice the symptoms?
 - How long have you had the pain?
 - How many days have you had this problem?
-- Since when are you unable to walk?
+- Since when has you pain become unbearable?
 - Do you have trouble breating all the time?
 - When did breathing problem started?
-- Since when did your migrains start?
+- Since when did your pain start?
 - When did this issue started?
 - From when are you having this problem?
 - Since when it all begin?
 - How many days have passed since you are experiancing this issue?
 - When did this problem begin?
 
-##intent:what_problem 
+##intent:what_problem
 - Okay so tell me more about this pain
 - What kind of pain do you have?
 - please describe your pain?
@@ -104,9 +102,9 @@
 - Can you describe the pain for me?
 - Can you please describe the pain?
 - Please, tell something about the pain.
-- Tell me more about your problem
-- Tell me more about your headache
-- Tell me more about your breating problem.
+- Tell me about your problem
+- Tell me something about your issue.
+- Tell me about your pain.
 - What can i do for you today?
 - What is your problem today?
 
@@ -174,6 +172,7 @@
 - What is your name?
 - What are you known as?
 - How can i recognize you?
+- I can call you as?
 
 ## intent: medications
 - Are you taking any medications?
@@ -182,15 +181,6 @@
 - Do you have any previous medications?
 - Do you have any other prescriptions?
 - Are you presently on any medications?
-- Are you taking any medicines presently
-
-## intent: faq/more_about_migraine
-- Can you tell me more about it?
-- Can you describe it in more detail?
-- Can you give more details? 
-- Anything else that you can tell me?
-
-
-
-
-
+- Are you taking any medicines presently?
+- Are you taking any medications for the pain?
+- Are you taking any medications for the pain currently?
