@@ -1,31 +1,31 @@
-## intent:goodbye  
-- Bye 
-- Goodbye
-- See you later
-- Bye bot
-- Goodbye friend
-
 ## intent:greet
-- Hi
-- Hey
-- Hello
+- hey
+- hello
+- hi
+- good morning
+- good evening
+- hey there
 
-## intent:thanks
-- Thanks
-- Thank you
-- Thank you so much
+## intent:goodbye
+- bye
+- goodbye
+- see you around
+- see you later
 
 ## intent:affirm
-- y
-- Y
 - yes
-- yes sure
-- absolutely
+- indeed
+- of course
+- that sounds good
+- correct
 
 ## intent:deny
 - no
 - never
 - I don't think so
+- don't like that
+- no way
+- not really
 
 ## intent:site
 - Can you tell me where the pain is?
@@ -44,7 +44,7 @@
 - Please, locate the pain for me.
 - Where is the pain exactly?
 
-##intent:exacerbating_factors
+## intent:exacerbating_factors
 - Does the pain reduce by doing anything?
 - Have you tried anything to make it better?
 - What makes the pain worse?
@@ -55,7 +55,7 @@
 - What causes the fever to amplify?
 - What increases the pain?
 
-##intent:associated_factors 
+## intent:associated_factors 
 - have you noticed any other symptoms?
 - When the pain starts, do you notice any symptoms with it?
 - You feel sick?
@@ -67,7 +67,7 @@
 - What symptoms did you notice?
 - Did you observe any symptoms?
 
-##intent:character 
+## intent:character 
 - Is the pain sharp or dull?
 - What does it feel like?
 - What is the nature of the pain?
@@ -80,7 +80,7 @@
 - Is the pain really bad?
 - Is the pain some how bearable?
 
-##intent:problem_start
+## intent:problem_start
 - How long ago did you notice the symptoms?
 - How long have you had the pain?
 - How many days have you had this problem?
@@ -94,7 +94,7 @@
 - How many days have passed since you are experiancing this issue?
 - When did this problem begin?
 
-##intent:what_problem
+## intent:what_problem
 - Okay so tell me more about this pain
 - What kind of pain do you have?
 - please describe your pain?
@@ -102,13 +102,10 @@
 - Can you describe the pain for me?
 - Can you please describe the pain?
 - Please, tell something about the pain.
-- Tell me about your problem
-- Tell me something about your issue.
-- Tell me about your pain.
 - What can i do for you today?
 - What is your problem today?
 
-##intent:radiation 
+## intent:radiation 
 - I see. Does the pain travel from there at all?
 - pain radiates to any other side?
 - Does the pain radiates to any of the other sites? 
@@ -121,7 +118,7 @@
 - Is the pains location same?
 - Does the pains location change?
 
-##intent:severity 
+## intent:severity 
 - How bad would you say the pain is?
 - How severe is the pain?
 - Rate the pain?
@@ -141,7 +138,7 @@
 - Are you too much in pain?
 - How much more can you bear?
 
-##intent:movements 
+## intent:movements 
 - Do you stay active?
 - Do you work out?
 - Do you lift heavy weights?
@@ -155,7 +152,7 @@
 - How is the pain when you move your hand?
 - How often do you work out?
 
-##intent:problem_before 
+## intent:problem_before 
 - Have you experienced this pain before?
 - Have you experienced this problem before?
 - Have you had a similar pain in the past?
@@ -184,3 +181,11 @@
 - Are you taking any medicines presently?
 - Are you taking any medications for the pain?
 - Are you taking any medications for the pain currently?
+
+## intent: follow_up
+- Can you tell me more about your problem?
+- Can you give me some more information regarding your problem?
+- Can you tell me more about your issue?
+- Please tell me more about your problem.
+- Can you give more details about your problem?
+- can you explain more?
