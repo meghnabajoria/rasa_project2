@@ -3,6 +3,8 @@
   - utter_greet
 * what_problem
   - utter_what_problem
+* follow_up
+  - action_last_intent
 * problem_start
   - utter_problem_start
 * associated_factors
@@ -15,15 +17,7 @@
   - utter_movements
 * goodbye
   - utter_goodbye
-
-## greet path
-* greet
-  - utter_greet
-
-## goodbye path
-* goodbye
-  - utter_goodbye
- 
-##  ask faq migraine
-* faq: Can you tell me more about it?
-  - respond_faq
+  
+## custom last_intent
+* follow_up
+  - action_last_intent
