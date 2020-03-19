@@ -1,138 +1,58 @@
-entities:
-- PROBLEM
-
-slots:
- PROBLEM:
-    type: text
-
-
-actions:
-- utter_greet
-- utter_goodbye
-- utter_what_problem
-- utter_default
-- utter_problem_start
-- utter_gratitude
-- utter_ask_again
-- utter_radiation
-- utter_severity
-- utter_movements
-- utter_site
-- utter_medications
-- utter_name
-- utter_problem_before
-- utter_character
-- utter_associated_factors
-- utter_exacerbating_factors
-- respond_faq
-
 intents:
-- goodbye
-- greet
-- thanks
-- affirm
-- deny
-- site
-- exacerbating_factors
-- associated_factors
-- character
-- problem_start
-- what_problem
-- radiation
-- severity
-- movements
-- problem_before
-- name
-- medications
-- faq
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - site
+  - exacerbating_factors
+  - associated_factors
+  - character
+  - problem_start
+  - what_problem
+  - radiation
+  - severity
+  - movements
+  - problem_before
+  - name
+  - medications
+  - follow_up
+  
+actions:
+- action_last_intent
 
 responses:
   utter_greet:
   - text: "Hello doctor"
-  - text: "Hi doctor"
-  - text: "Good morning doctor"
-  - text: "Good evening doctor"
   utter_site:
-  - text:"It's in my knees"
-  - text:"It's in my right knee"
-  - text:"It's in my left knee"
-  - text:"In my abdomen"
-  - text:"In the left side of my forehead"
-  - text:"The pain is in my stomach"
-  - text:"I have stomach pain"
+  - text: "It's in my knees"
   utter_exacerbating_factors:
-  - text:"No! its not reducing by any means"
-  - text:"No ! the pain is not reducing"
-  - text:"Yes! if i massage the spot continuesly"
-  - text:"I have no idea"
-  - text:"Walking increases the pain"
-  - text:"working out sometimes increases the pain"
-  - text:"eating spicy food increases the pain"
+  - text: "No ! the pain is not reducing"
   utter_associated_factors:
-  - text:"No doctot that's all"
-  - text:"Yes! I feel nauseous"
-  - text:"yes doctor"
-  - text:"Yeah ! slight dizziness"
-  - text:"sometimes i notice headache"
+  - text: "No doctot that's all"
   utter_character:
-  - text:"It's usually a sharp pain"
-  - text:"It's a dull pain"
-  - text:"I will say it's moderate"
-  - text:"Initially its low but gradually it increases"
-  - text:"Yes, the fever is genrally low"
-  - text:"It's usually low"
-  - text:"No! My migrains are pretty bad"
-  - text:"Yeah the migrains are usually bearable"
+  - text: "It's usually a sharp pain" 
   utter_problem_start:
-  - text:"Just a few days back,may be a week"
-  - text:"Almost one month back"
-  - text:"since a year"
-  - text:"It's there ever since I started noticing it."
+  - text: "Just a few days back,may be a week"   
   utter_what_problem:
-  - text:"I have pain in lower abdomen"
-  - text:"My knees hurt. I am unable to walk."
-  - text:"I have migraine"
-  - text:"I have trouble breating"
+  - text: "My knees hurt. I am unable to walk."
   utter_radiation:
-  - text:"very seldom"
-  - text:"only when the headache increases"
-  - text:"No, it usually sticks to my lower abdomen only"
-  - text:"No, just the knees"
-  - text:"No pain, just fever"
+  - text: "No, just the knees"
   utter_severity:
-  - text:"Like five out of ten"
-  - text:"unbearable pain at times"
-  - text:"very high fever"
-  - text:"The fever is low"
-  - text:"I am hardly able to walk for five minutes"
-  - text:"My migrains worsen by afternoon"
+  - text: "I am hardly able to walk for five minutes"
   utter_movements:
-  - text:"yes doctor I am very active"
-  - text:"yes doctor, I work out daily"
-  - text:"I don't workout but I am active"
-  - text:"Yes doctor, I tend to overthink sometimes"
-  - text:"No doctor, I take my mental health very seriosuly"
+  - text: "Yes doctor, I tend to overthink sometimes"
   utter_problem_before:
-  - text:"No! It's the first time"
-  - text:"Yes, frequently"
-  - text:"Yes but rarely"
-  - text:"Not very often, usually once a month"
+  - text: "No! It's the first time"
   utter_name:
-  - text:"My name is Ema"
-  - text:"You can call me John"
-  - text:"I am Ashley"
+  - text: "I am Ashley"
   utter_medications:
-  - text:"I am currently taking medicines prescribed by other doctor"
-  - text:"No!"
-  - text:"I was taking few medicines but then I discontinued them"
-  - text:"I am having a pain killer"
+  - text: "I am having a pain killer"
   utter_goodbye:
-  - text:"Bye"
-  utter_default:
-  - text:"I am sorry, I didn't get that. Could you please repeat your query?"
-  - text:"I am not sure what you are aiming for."
-  utter_gratitude:
-  - text:"Glad that I could be of help to you!\nBye"
-  utter_ask_again:
-  - text:"Okay! Let's start again, please tell me what do you need?"
-  - text:"No issues! Let's try this again.\n Please repeat your query?"
+  - text: "Bye"
+  utter_follow_up:
+  - text: "Doctor ! I am sufferring from knee pain. It's genrally very a sharp pain and has begun just a week weeks back. It is so bad that I am unable to walk even for five minutes."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
