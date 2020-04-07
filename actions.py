@@ -5,12 +5,66 @@
 # https://rasa.com/docs/rasa/core/actions/#custom-actions/
 
 
+# This is a simple example for a custom action which utters "Hello World!"
 
 import re
 from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+
+class IntetntRecognition(Action):
+    def run()
+        label_to_idx = {'age': 0,
+    	'associated_Factors': 1,
+    	'character': 2,
+     	'closedQuestions': 3,
+     	'concern': 4,
+     	'dob': 5,
+     	'drugHx': 6,
+     	'exacerbating_Factors': 7,
+     	'followup': 8,
+     	'goodbye': 9,
+     	'introduction': 10,
+     	'name': 11,
+     	'onset': 12,
+     	'openQuestions': 13,
+     	'pastMedicalHx': 14,
+     	'pastSurgicalHx': 15,
+     	'probelmStart': 16,
+     	'problembefore': 17,
+     	'radiation': 18,
+     	'reassurance': 19,
+     	'severity': 20,
+     	'site': 21,
+     	'summary': 22,
+     	'timing': 23,
+     	'transitionPoints': 24,
+     	'whatProblem': 25,
+    	'follow_up':26,
+    	'greet':27}
+
+    # Set to track intents
+    intent_tracker = set()
+
+    class ActionCheckIntent(Action):
+        def name(self) -> Text:
+            return “action_check_intent”
+
+        def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+            global label_to_idx, intent_tracker
+            for item in reversed(tracker):
+	
+            if item["event"] == "user":
+                intent_code = label_to_idx[item["parse_data"]["intent"]["name"]]
+                if intent_code in intent_tracker:
+                    dispatcher.utter_message("As I mentioned before")
+            else:
+                intent_tracker.add(intent_code)
+            # Break because we only want the last user intent
+            break
+
 
 
 class ActionLastIntent(Action):
