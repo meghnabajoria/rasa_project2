@@ -14,7 +14,7 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
 class IntetntRecognition(Action):
-    def run()
+    def run():
         label_to_idx = {'age': 0,
     	'associated_Factors': 1,
     	'character': 2,
