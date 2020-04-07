@@ -55,15 +55,14 @@ class IntetntRecognition(Action):
 
             global label_to_idx, intent_tracker
             for item in reversed(tracker):
-	
-            if item["event"] == "user":
-                intent_code = label_to_idx[item["parse_data"]["intent"]["name"]]
-                if intent_code in intent_tracker:
-                    dispatcher.utter_message("As I mentioned before")
-                else:
-                    intent_tracker.add(intent_code)
-                # Break because we only want the last user intent
-                break
+	        if item["event"] == "user":
+                    intent_code = label_to_idx[item["parse_data"]["intent"]["name"]]
+                    if intent_code in intent_tracker:
+                        dispatcher.utter_message("As I mentioned before")
+                    else:
+                        intent_tracker.add(intent_code)
+                    # Break because we only want the last user intent
+                    break
 
 
 
