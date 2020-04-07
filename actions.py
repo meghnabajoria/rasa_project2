@@ -46,8 +46,8 @@ label_to_idx = {'age': 0,
 intent_tracker = set()
 
 class ActionCheckIntent(Action):
-def name(self) -> Text:
-    return “action_check_intent”
+    def name(self) -> Text:
+        return “action_check_intent”
 
 def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
