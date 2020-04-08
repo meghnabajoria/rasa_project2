@@ -81,6 +81,9 @@ class ActionLastIntent(Action):
 	logging.info("Action last intent invoked")
 	
 	what = tracker.events_after_latest_restart()
+	
+	print(what)
+	
         last_item=what[-5] 
         last_item=str(last_item)
 		#print(last_item)
