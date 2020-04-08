@@ -46,21 +46,23 @@ label_to_idx = {'age': 0,
 intent_tracker = set()
 
 class ActionCheckIntent(Action):
-    def name(self) -> Text:
-        return “action_check_intent”
+	def name(self) -> Text:
+		return “action_check_intent”
 
-def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+	def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-    global label_to_idx, intent_tracker
-    for item in reversed(tracker):
-	if item["event"] == "user":
-	    intent_code = label_to_idx[item["parse_data"]["intent"]["name"]]
-	    if intent_code in intent_tracker:
-		dispatcher.utter_message("As I mentioned before")
-	    else:
-		intent_tracker.add(intent_code)
-	    # Break because we only want the last user intent
-	    break
+		global label_to_idx, intent_tracker
+
+		conversation_tracker = tracker.events_after_latest_restart()
+		for item in reversed(conversation_tracker):
+			if item["event"] == "user":
+				intent_code = label_to_idx[item["parse_data"]["intent"]["name"]]
+				if intent_code in intent_tracker:
+					dispatcher.utter_message("As I mentioned before")
+				else:
+					intent_tracker.add(intent_code)
+			# Break because we only want the last user intent
+			break
 
 
 
