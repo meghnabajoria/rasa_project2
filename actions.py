@@ -56,7 +56,7 @@ class ActionCheckIntent(Action):
 
 		global label_to_idx, intent_tracker
 		
-		logging.config("Action triggered")
+		logging.info("Action check intent invoked")
 		
 		conversation_tracker = tracker.events_after_latest_restart()
 		for item in reversed(conversation_tracker):
@@ -77,7 +77,10 @@ class ActionLastIntent(Action):
         return "action_last_intent"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        what = tracker.events_after_latest_restart()
+        
+	logging.info("Action last intent invoked")
+	
+	what = tracker.events_after_latest_restart()
         last_item=what[-5] 
         last_item=str(last_item)
 		#print(last_item)
