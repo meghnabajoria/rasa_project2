@@ -8,6 +8,7 @@
 # This is a simple example for a custom action which utters "Hello World!"
 
 import re
+import logging
 from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
@@ -45,6 +46,8 @@ label_to_idx = {'age': 0,
 # Set to track intents
 intent_tracker = set()
 
+logging.basicConfig(level=logging.INFO)
+
 class ActionCheckIntent(Action):
 	def name(self) -> Text:
 		return “action_check_intent”
@@ -52,7 +55,9 @@ class ActionCheckIntent(Action):
 	def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
 		global label_to_idx, intent_tracker
-
+		
+		logging.config("Action triggered")
+		
 		conversation_tracker = tracker.events_after_latest_restart()
 		for item in reversed(conversation_tracker):
 			if item["event"] == "user":
