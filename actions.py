@@ -49,26 +49,27 @@ intent_tracker = set()
 logging.basicConfig(level=logging.INFO)
 
 class ActionCheckIntent(Action):
-	def name(self) -> Text:
-		return “action_check_intent”
+    def name(self) -> Text:
+        return "action_check_intent"
 
-	def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-		global label_to_idx, intent_tracker
-		
-		logging.info("Action check intent invoked")
-		
-		conversation_tracker = tracker.events_after_latest_restart()
-		for item in reversed(conversation_tracker):
-			if item["event"] == "user":
-				intent_code = label_to_idx[item["parse_data"]["intent"]["name"]]
-				if intent_code in intent_tracker:
-					dispatcher.utter_message("As I mentioned before")
-				else:
-					intent_tracker.add(intent_code)
-			# Break because we only want the last user intent
-			break
+        global label_to_idx, intent_tracker
 
+        logging.info("Action check intent invoked")
+
+        conversation_tracker = tracker.events_after_latest_restart()
+        for item in reversed(conversation_tracker):
+            if item["event"] == "user":
+                intent_code = label_to_idx[item["parse_data"]["intent"]["name"]]
+                if intent_code in intent_tracker:
+                    dispatcher.utter_message("As I mentioned before")
+                else:
+                    intent_tracker.add(intent_code)
+            # Break because we only want the last user intent
+            break
+        
+        return  []
 
 
 class ActionLastIntent(Action):
@@ -77,16 +78,16 @@ class ActionLastIntent(Action):
         return "action_last_intent"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        
-	logging.info("Action last intent invoked")
-	
-	what = tracker.events_after_latest_restart()
-	
-	print(what)
+
+        logging.info("Action last intent invoked")
+
+        what = tracker.events_after_latest_restart()
+
+        print(what)
 	
         last_item=what[-5] 
         last_item=str(last_item)
-		#print(last_item)
+        #print(last_item)
 		
         substr0="name"       
         inilist0=[m.start() for m in re.finditer(r"name",last_item)]
@@ -94,12 +95,12 @@ class ActionLastIntent(Action):
         last_item=last_item[name_counter_lastelement:]
         
         print(last_item)
-    
+
         inilist4=[m.start() for m in re.finditer(r"confidence",last_item)]
         confidence_counter_lastelement=inilist4[0]
         last_item=last_item[:confidence_counter_lastelement]
         print(last_item)
-		
+
         last_item=last_item[8:]
         last_item = last_item.partition("'")[0]
         print("  THE FINAL LAST_ITEM IS")

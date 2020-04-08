@@ -19,6 +19,7 @@ intents:
   
 actions:
 - action_last_intent
+- action_check_intent
 
 responses:
   utter_greet:
